@@ -7,7 +7,7 @@ export function EventList(){
     return(
         <>
         {data.map( (event, index)=> (
-        <Link href={`${event.link}`}>
+        <Link href={`${event.link}`} key={index}>
             <a>
         <_EventItem 
         image={`/images/events/${event.image}`}
@@ -16,7 +16,7 @@ export function EventList(){
         location={event.location}
         label={event.label}
         imageVisible={event.imageVisible}
-        key={index}
+        
         style={{
             width: "100%"
         }}/>
