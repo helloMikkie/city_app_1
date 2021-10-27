@@ -1,23 +1,27 @@
 import Head from "next/head"
-import { Tip } from "../components/Tip"
+import Link from "next/link"
 import { Container } from "../components/Container"
+import _SplashScreen from "https://framer.com/m/Splash-Screen-VILD.js@fNaKBHGBHKyGTPbKjtkW"
 
-// A Smart Component from Framer
-import Toggle from "https://framer.com/m/Toggle-B5iT.js@X94mtocAj5XithxLESme"
+import {EventList} from "../components/EventList"
+
 
 export default function Home() {
     return (
         <>
             <Head>
-                <title>Framer</title>
+                <title>IBA City App</title>
                 <meta name="description" content="Modules" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
 
-            <Container>
-                <Toggle />
-                <Tip />
-            </Container>
+            
+                <Link href="/events">
+                    <_SplashScreen 
+                    style={{width: "100%", height: "100%"}} />
+                </Link>
+               
+           
         </>
     )
 }

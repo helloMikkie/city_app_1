@@ -1,0 +1,62 @@
+.wrapper{
+    max-width: 1024px; 
+    margin: 0 auto;
+    padding: 0 16px;
+    color: blue;  
+}
+
+
+.heading{
+    margin-top: 32px; 
+    margin-bottom: 32px; 
+    padding-bottom: 16px;;
+    border-bottom: 1px solid blue; 
+}
+.heading > * + *{
+    margin-top: 12px; 
+}
+.date{
+    font-family: Euclid Circular A Semibold;
+    font-size: 22px; 
+}
+.label{
+    text-transform: uppercase; 
+    font-size: 16px; 
+    letter-spacing: 0.05em; 
+}
+
+.link{
+    position: relative; 
+}
+
+.link:after{
+    content: url(/images/icons/external-link.svg); 
+    position: absolute; 
+    right: -32px;  
+    
+    
+}
+.subinfo h4{
+    margin-top: 48px; 
+}
+.subinfo > *{
+    margin-top: 16px; 
+}
+.subinfo li{
+    padding-bottom: 8px;
+    border-bottom: 1px solid blue;  
+}
+.title{
+    font-size: 32px; 
+}
+.headline{
+    font-size: 22px; 
+    margin-bottom:16px;
+}
+
+.heading_M{
+  
+    text-align: left;
+    text-transform: uppercase;
+}
+
