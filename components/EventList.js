@@ -6,17 +6,17 @@ import _EventItem from "https://framer.com/m/Event-Item-6XuV.js@w7Jz31HgWqCuqvdn
 export function EventList(){
     return(
         <>
-        {data.map( event => (
-        <Link href={`/${event.link}`}>
+        {data.map( (event, index)=> (
+        <Link href={`${event.link}`}>
             <a>
         <_EventItem 
         image={`/images/events/${event.image}`}
         date={event.date}
         headline={event.headline}
         location={event.location}
-        label={event.label ? event.label : null}
+        label={event.label}
         imageVisible={event.imageVisible}
-        key={event.id}
+        key={index}
         style={{
             width: "100%"
         }}/>
