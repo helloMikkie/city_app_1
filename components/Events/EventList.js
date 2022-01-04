@@ -1,7 +1,7 @@
-import data from "./data/events"
+import data from "../data/events"
 import Link from "next/link"
 
-import _EventItem from "https://framer.com/m/Event-Item-6XuV.js@w7Jz31HgWqCuqvdnLGvo"
+import CardsFEventCard from "https://framer.com/m/cards-F-Event-Card-6iYs.js@i2VAMlyKETM6A17ZF8fK"
 
 export function EventList(){
     return(
@@ -9,7 +9,7 @@ export function EventList(){
         {data.map( (event, index)=> (
         <Link href={`${event.link}`} key={index}>
             <a>
-        <_EventItem 
+        <CardsFEventCard 
         image={`/images/events/${event.image}`}
         date={event.date}
         headline={event.headline}

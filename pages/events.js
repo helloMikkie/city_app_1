@@ -1,26 +1,22 @@
 import Head from "next/head"
-import { Container } from "../components/Container"
+import Layout_Events from "../components/Layouts/Layout_Events"
+import {EventList} from "../components/Events/EventList"
 
-
-import {EventList} from "../components/EventList"
-import {Header} from "../components/Header"
-import {TabbarMain} from "../components/Tabbar_Main"
 
 export default function Events() {
     return (
         <>
             <Head>
-                <title>Events</title>
+                <title>Programm</title>
                 <meta name="description" content="Modules" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
 
-         
-                <Header title="Events"  />
-                <Container>
-                    <EventList />
-                </Container>
-                <TabbarMain  />
+         <Layout_Events link_IBA="/iba" link_Service="/service" link_Settings="/settings" link_Projects="/projects"  link_Exhibition="/exhibition" link_Favorits="/favorits" link_Tours="/tours">
+                
+                <EventList />
+
+            </Layout_Events>
             
         </>
     )

@@ -1,6 +1,25 @@
 /* Global */
+:root{
+    --white: #FAFAFA; 
+    --black: #404040;
+    --deep-black: #000000;
+    --dark-gray: #8F8F8F;
+    --light-gray: #EBEBEB;
+    --yellow: #FFEC1A;
+    --warning: #FF0A0A;
+    --700: 2rem; 
+    --600: 1.375rem; 
+    --500: 1.125rem; 
+    --400: 1rem;
+    --300: 0.875rem; 
+    --200: 0.75rem; 
+    --100: 0.625rem; 
+}
 
-
+div[data-framer-component-type='Text'] span {
+    font-size: var(--framer-font-size) !important;
+    line-height: var(--framer-line-height) !important;
+}
 
 html,
 body {
@@ -9,25 +28,19 @@ body {
     height: 100%;
     font-family: Euclid Circular A Regular, -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
     text-size-adjust: 100%;
-    line-height: 1.5; 
-    font-size: 18px; 
-    letter-spacing: 0.02em;
+    line-height: 1.4; 
+    font-size: var(--400); 
+    letter-spacing: 0.04em;
     word-spacing: -0.02em; 
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    background-color: var(--white);
+    color: var(--black);
 }
 
-
-h1, h2, h3, h4{
-    font-Family: Euclid Circular A Semibold;
-    font-weight: 600;
-    line-height: 1.2; 
-    letter-spacing: -0.02em; 
-
-}
 
 p{
     margin-bottom: 16px; 
@@ -40,6 +53,7 @@ list-style: none;
 }
 #__next {
     height: 100%;
+    position: relative;
 }
 
 *,
@@ -53,17 +67,6 @@ list-style: none;
 
 a{
     text-decoration: none;
-}
-
-.container {
-    padding-top: 48px; 
-    padding-bottom: 80px; 
-    position: relative; 
-    /* display: grid;
-    place-items: center; */
-    width: 100%;
-    /* height: 100%; */
-
 }
 
 
@@ -108,4 +111,34 @@ a{
             format("woff"),
         url("/fonts/Euclid-CircularA/EuclidCircularA-Semibold.woff2")
             format("woff2");
+}
+
+
+.container {
+    /* padding-top: 48px; 
+    padding-bottom: 80px;  */
+    position: relative; 
+    /* display: grid;
+    place-items: center; */
+    width: 100%;
+    min-height: 100%;
+    display: flex; 
+    flex-direction: column; 
+
+}
+
+
+.navbarStyle{
+    width: 100%; 
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    
+}
+.tabbarStyle{
+    width: 100%; 
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    margin-top: auto;
 }

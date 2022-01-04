@@ -1,0 +1,41 @@
+
+.uppercase{
+    text-transform: uppercase;
+ 
+}
+.semibold{
+    font-family: Euclid Circular A Semibold;
+}
+.regular{
+    font-family: Euclid Circular A Regular;
+}
+
+.l-tight{
+    line-height: 1.15;
+}
+
+.fs-700{
+    font-size: var(--700);
+}
+.fs-600{
+    font-size: var(--600); 
+}
+.fs-500{
+    font-size: var(--500) 
+}
+.fs-400{
+    font-size: var(--400); 
+}
+
+.fs-300{
+    font-size: var(--300);
+}
+
+.fs-200{
+    font-size:var(--200); 
+}
+
+.fs-100{
+    font-size: var(--100); 
+}
+

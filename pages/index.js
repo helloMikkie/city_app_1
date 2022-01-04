@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Container } from "../components/Container"
 import _SplashScreen from "https://framer.com/m/Splash-Screen-VILD.js@fNaKBHGBHKyGTPbKjtkW"
 
-import {EventList} from "../components/EventList"
+import {EventList} from "../components/Events/EventList"
 
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
             </Head>
 
             
-                <Link href="/events">
+                <Link href="/projects">
                     <_SplashScreen 
                     style={{width: "100%", height: "100%"}} />
                 </Link>

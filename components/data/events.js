@@ -1,7 +1,7 @@
 const data = [
   {
     link: "/event",
-    date: "2.4.–8.4.2022",
+    date: "2.4.–8.4.2021",
     headline: "Wohin mit dem Wissen in der Stadt",
     label: "Aufführung",
     location: "Friedrich-Ebert-Gedenkstätte",
