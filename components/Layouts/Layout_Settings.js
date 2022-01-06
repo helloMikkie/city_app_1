@@ -6,14 +6,14 @@ export default function Layout_Settings({children, link_IBA, link_Service,link_P
     const router = useRouter()
     return(
         <>
-        <NavNavigationMenu
+        <NavNavigationMenu style={NavbarStyle}
         backVisible={false} 
         variant="settings-active" 
         openIBA={() => router.push(link_IBA)}
         openService={() => router.push(link_Service)}
         ></NavNavigationMenu>
-        <div>{children}</div>
-        <NavFTabbbarMain 
+        <div style={Wrapper}>{children}</div>
+        <NavFTabbbarMain  style={TabbarStyle}
          projects={() => router.push(link_Projects)}
          events={() => router.push(link_Events)}
          touren={() => router.push(link_Tours)}
@@ -22,4 +22,31 @@ export default function Layout_Settings({children, link_IBA, link_Service,link_P
         />
         </>
     )
+}
+
+
+const TabbarStyle = {
+    width: "100%",
+    position: "fixed",
+    zIndex: 999,
+    bottom: 0,
+ 
+}
+const NavbarStyle={
+    width: "100%",
+    position: "fixed",
+    zIndex: 999,
+    top: 0,
+        
+    }
+const Wrapper={
+    position: "fixed",
+    top: "48px",
+    left: 0,
+    right: 0,
+    bottom: "64px",
+    overflow: "scroll",
+    padding: "0",
+ 
+    
 }
