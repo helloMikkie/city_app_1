@@ -13,7 +13,7 @@ export default function TourInfo() {
             </Head>
 
             
-            <Layout_Tour link_Back="javascript:history.back()" link_Service="/service" link_Settings="/settings" link_Events="/events" link_Exhibition="/exhibition" link_Favorits="/favorits" link_Projects="/projects">
+            <Layout_Tour link_Back="javascript:history.back()" link_IBA="/iba" link_Service="/service" link_Settings="/settings" link_Events="/events" link_Exhibition="/exhibition" link_Favorits="/favorits" link_Projects="/projects">
                 
                 <Image src="/images/projects/gadamer.jpg"  
                 width={2000} height={800}

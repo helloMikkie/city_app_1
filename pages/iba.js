@@ -10,7 +10,7 @@ export default function Iba() {
         <Layout_IBA link_Service="/service" link_Settings="/settings" link_Projects="/projects" link_Events="/events" link_Exhibition="/exhibition" link_Favorits="/favorits" link_Tours="/tours">
             <Link href={"/iba-heidelberg"}>
                 <a>
-                    <NavF_Item style={{width: "100%"}}
+                    <NavF_Item style={NavItemStyle}
                     title="IBA Heidelberg" 
                     ikonVisible={false}
                     />
@@ -18,7 +18,7 @@ export default function Iba() {
             </Link>
             <Link href={"/impressum"} >
                 <a>
-                    <NavF_Item  style={{width: "100%"}}
+                    <NavF_Item  style={NavItemStyle}
                     title="Impressum" 
                     ikonVisible={false}
                     />
@@ -26,7 +26,7 @@ export default function Iba() {
             </Link>
             <Link href={"/datenschutz"}>
                 <a>
-                    <NavF_Item style={{width: "100%"}}
+                    <NavF_Item style={NavItemStyle}
                     title="Datenschutz" 
                     ikonVisible={false}
                     />
@@ -34,13 +34,13 @@ export default function Iba() {
             </Link>
             <Link href={"/sponsors"}>
                 <a>
-                    <NavF_Item style={{width: "100%"}}
+                    <NavF_Item style={NavItemStyle}
                     title="Sponsoren" 
                     ikonVisible={false}
                     />
                 </a>
             </Link>
-            <NavF_SocialMedia style={{width: "100%"}} />
+            <NavF_SocialMedia style={NavItemStyle} />
 
 
             
@@ -49,3 +49,7 @@ export default function Iba() {
 }
 
 
+const NavItemStyle={
+    width: "100%",
+    padding: "12px 0"
+}

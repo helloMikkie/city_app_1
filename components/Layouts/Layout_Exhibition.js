@@ -7,16 +7,16 @@ export default function Layout_Exhibition(
     const router = useRouter()
     return(
         <>
-        <NavNavigationMenu
+        <NavNavigationMenu style={NavbarStyle}
         backVisible={false} 
         variant="default" 
         openIBA={() => router.push(link_IBA)}
         openService={() => router.push(link_Service)}
         openSettings={() => router.push(link_Settings)}
         />
-        <div className="container">{children}</div>
+        <div style={Wrapper}>{children}</div>
 
-        <NavFTabbbarMain style={{width: "100%"}} 
+        <NavFTabbbarMain style={TabbarStyle} 
         variant="exhibition active"
         projects={() => router.push(link_Projects)}
         events={() => router.push(link_Events)}
@@ -27,3 +27,32 @@ export default function Layout_Exhibition(
     )
 }
 
+const TabbarStyle = {
+    width: "100%",
+    position: "fixed",
+    zIndex: 999,
+    bottom: 0,
+ 
+}
+const NavbarStyle={
+    width: "100%",
+    position: "fixed",
+    zIndex: 999,
+    top: 0,
+        
+    }
+const Wrapper={
+    position: "fixed",
+    top: "48px",
+    left: 0,
+    right: 0,
+    bottom: "64px",
+    overflow: "scroll",
+    backgroundColor: "#FFEC1A",
+    display:"flex",
+    flexDirection: "column",
+    justifyContent: "space-between"
+   
+ 
+    
+}
