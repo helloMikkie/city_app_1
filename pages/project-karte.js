@@ -13,10 +13,11 @@ export default function Events() {
             </Head>
 
             
-            <Layout_Project link_Back="javascript:history.back()" link_Service="/service" link_Settings="/settings" link_Events="/events" link_Exhibition="/exhibition" link_Favorits="/favorits" link_Tours="/tours">
+            <Layout_Project link_Back="javascript:history.back()" link_IBA="/iba" link_Service="/service" link_Settings="/settings" link_Events="/events" link_Exhibition="/exhibition" link_Favorits="/favorits" link_Tours="/tours">
                 
 
                 {/* Karte Mapbox */}
+                <iframe style={MapStyle} src="https://api.mapbox.com/styles/v1/heimannundschwantes/cjwtbq9hq1oeu1cq77uqcghb5.html?title=false&access_token=pk.eyJ1IjoiaGVpbWFubnVuZHNjaHdhbnRlcyIsImEiOiJjanU5ajNmeWYxdnlsM3pvMjB1aHN3djl1In0.C4x_2T6CWDi6Y1vG6YbLBg&zoomwheel=false#12.24/49.38749/8.716" title="IBA"></iframe>
 
                 <FAB_Projects 
                 karte="active" 
@@ -29,4 +30,10 @@ export default function Events() {
                 </Layout_Project>
         </>
     )
+}
+
+const MapStyle = {
+    width: "100%",
+    height: "100%",
+    border: "none"
 }
